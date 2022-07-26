@@ -2,26 +2,26 @@ package controlstatements;
 
 public class Ifelse {
 
-	import java.util.Scanner;
-
-	public class IfElseEvenOdd {
-
-		public static void main(String[] args) {
-			
-			//to determine the number entered is even or odd
-			
-			Scanner sc = new Scanner(System.in);
-			int num = sc.nextInt();
-			int rem = num % 2;
-			
-			// condition of even and odd
-			if(rem==0) {
-				System.out.println("The number entered is EVEN");
-			}
-			else {
-				System.out.println("The number entered is ODD");
-			}
-
+public static void main(String[] args) {
+		
+		/* conditional statement syntax
+		 if(condition){
+		   Statement1;
+		 }else {
+		   statement2;
+		 }
+		 */
+		int a = 10;
+		int b = 5;
+		
+		if(a>b) {
+			a=0;
+			System.out.println("a value becomes zero since if statement is true:" +a);
 		}
-
+		else {
+			b=0;
+			System.out.println("b value becomes zero since if statement is false"+b);
+		}
 	}
+
+}
